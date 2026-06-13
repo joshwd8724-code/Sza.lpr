@@ -749,3 +749,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.LeftControl,
     Search      = true,
 })
+
+end
+
+LoadMainHub()
