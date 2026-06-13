@@ -750,6 +750,18 @@ local Window = Fluent:CreateWindow({
     Search      = true,
 })
 
+-- IMPORTANT: add at least one tab
+    local Tabs = {
+        Main = Window:AddTab({ Title = "Main" })
+    }
+
+    -- IMPORTANT: add something visible
+    Tabs.Main:AddParagraph({
+        Title = "Loaded",
+        Content = "UI is working correctly"
+    })
+
+
 end
 
 LoadMainHub()
