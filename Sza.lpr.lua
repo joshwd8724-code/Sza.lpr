@@ -729,4 +729,23 @@ local HeartbeatConn = RunService.Heartbeat:Connect(function()
     end
 end)
 
+local Fluent = loadstring(game:HttpGet("https://github.com/StyearX/Fluent-Modded/releases/download/Fluent/FluentPro"))()
 
+Fluent:Notify({
+    Title = "Script Loaded",
+    Content = "Welcome to my hub!",
+    Duration = 3
+})
+
+function LoadMainHub()
+
+local Window = Fluent:CreateWindow({
+    Title       = "Refresh Hub",
+    SubTitle    = "by Sae (Extrasae) discord user.",
+    TabWidth    = 160,
+    Size        = UDim2.fromOffset(500, 480),
+    Acrylic     = true,
+    Theme       = "Charcoal",
+    MinimizeKey = Enum.KeyCode.LeftControl,
+    Search      = true,
+})
